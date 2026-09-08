@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>অফলাইন — Tuition O Job Media</title>
+<link rel="icon" href="/icon-192.png" type="image/png">
+<style>
+  :root{
+    --bg:#FBF7EF; --surface:#FFFFFF; --ink:#2A2420; --ink-soft:#6B6155;
+    --teal:#2F6F62; --teal-deep:#1C4A3E; --gold:#CB8A2E;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+    padding:24px;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;text-align:center;
+  }
+  .card{background:var(--surface);border-radius:16px;padding:40px 28px;max-width:380px;
+    box-shadow:0 10px 32px rgba(42,36,32,0.08);}
+  .mark{width:56px;height:56px;border-radius:14px;margin:0 auto 18px;display:flex;
+    align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:24px;
+    background:linear-gradient(135deg,var(--teal),var(--teal-deep));}
+  h1{font-size:20px;margin:0 0 8px;color:var(--teal-deep);}
+  p{color:var(--ink-soft);font-size:15px;line-height:1.6;margin:0 0 20px;}
+  button{background:var(--teal-deep);color:#fff;border:none;border-radius:10px;
+    padding:12px 22px;font-size:15px;font-weight:600;cursor:pointer;}
+  button:active{opacity:0.85;}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="mark">T</div>
+    <h1>ইন্টারনেট সংযোগ নেই</h1>
+    <p>আপনি এখন অফলাইনে আছেন। সংযোগ ফিরে এলে পাতাটি আবার লোড করুন।</p>
+    <button onclick="location.reload()">আবার চেষ্টা করুন</button>
+  </div>
+</body>
+</html>
